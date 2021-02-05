@@ -8,7 +8,7 @@ readStream.on('data', (chunk) =>{
 })
 
 readStream.on('end', ()=>{
-    console.log('end', Buffer.concat(data).toString())
+    console.log('end :', Buffer.concat(data).toString())
 })
 
 readStream.on('error', (err)=>{
